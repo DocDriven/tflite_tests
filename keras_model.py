@@ -15,7 +15,7 @@ keras.backend.set_session(train_sess)
 
 with train_graph.as_default():
 
-	keras.backend.set_learning_phase(1)
+	#keras.backend.set_learning_phase(1)
 
 	train_dataset = tf.data.Dataset.from_tensor_slices((training_data, training_data))
 	train_dataset = train_dataset.shuffle(1000).batch(1)
